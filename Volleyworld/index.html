@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Volleyworld</title>
+<meta charset="UTF-8">
+<meta name="description" content="Free Web information about Volleyball">
+<meta name="keywords" content="volleyball, Volleyworld">
+<meta name="author" content="Svea Hamblin">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="style.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://asianvolleyball.net/new/wp-content/uploads/2020/01/EDD_5281.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w4-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="spielregeln.html" class="w3-button w3-block w3-black">SPIELREGELN</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="ablauf.html" class="w3-button w3-block w3-black">ABLAUF</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="techniken.html" class="w3-button w3-block w3-black">TECHNIKEN</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="taktik.html" class="w3-button w3-block w3-black">TAKTIK</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">VOLLEYWORLD</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-light-grey w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WAS IST VOLLEYBALL?</span></h5>
+    <p>Volleyball ist eine Mannschaftssportart. Bei diesem Sport spielen jeweils sechs Spieler*innen auf einer Feldhälfte gegeneinander. Zwischen den Gegner*innen ist ein Netz gespannt. Das Ziel ist es den Ball mit maximal drei Berührungen, ohne dass dieser auf den Boden fällt, über das Netz zu spielen. Fällt der Ball auf der gegnerischen Seite auf den Boden oder begehen die Gegner*innen einen Fehler, bekommt die eigene Mannschaft einen Punkt.</p>
+    <p>Volleyball ist in den Vereinigten Staaten im 19. Jahrhundert entstanden. Heute wird die Sportart weltweit gespielt, unter anderem an den olympischen Spielen oder den Weltmeisterschaften. </p>
+    <div class="w3-panel w3-leftbar">
+      <p><i>“For the first year and a half I just wanted to quit every day. It was so bad and no one wanted me on the team… I’m the last person to tell someone that they’ll never be successful in volleyball because that was all I ever heard for years, that I was too short.”</i></p>
+      <p>Debbie Green, Passeuse in den USA</p>
+    </div>
+    <img src="https://volleycountry.com/wp-content/uploads/2018/11/3-best-volleyball-games.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Website von Svea Hamblin</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Volleyworld</title>
+<meta charset="UTF-8">
+<meta name="description" content="Free Web information about Volleyball">
+<meta name="keywords" content="volleyball, Volleyworld">
+<meta name="author" content="Svea Hamblin">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="style.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://asianvolleyball.net/new/wp-content/uploads/2020/01/EDD_5281.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w4-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="spielregeln.html" class="w3-button w3-block w3-black">SPIELREGELN</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="ablauf.html" class="w3-button w3-block w3-black">ABLAUF</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="techniken.html" class="w3-button w3-block w3-black">TECHNIKEN</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="taktik.html" class="w3-button w3-block w3-black">TAKTIK</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">VOLLEYWORLD</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-light-grey w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABLAUF EINES SPIELS</span></h5>
+    <h6 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SPIELEN DES BALLES</span></h6>
+    <p>Der typische Spielzug besteht aus drei Ballkontakten zusätzlich des Blocks. Wenn geblockt wird zählt dies nicht als Berührung.  
+        Der erste, gezählte Kontakt ist die Annahme, in welcher der Ball zum Netz gespielt wird. Der zweite Kontakt ist der Pass, bei welchem der Ball für den Angriff an einen der Angreifer*innen gespielt wird. Der dritte Kontakt ist der Angriff, welcher von einem der Angreifer*innen gespielt wird, dabei muss der Ball über das Netz ins gegnerische Feld gelangen. </p>
+    <p>Die Berührungen können mit allen Körperteilen ausgeführt werden, der Ball darf aber nicht gehalten oder geführt werden. Ausserdem darf ein*e Spieler*in den Ball nicht zweimal nacheinander berühren. Eine Ausnahme gibt es hier beim Block, nach welchem der Ball ein weiteres Mal gespielt werden darf.</p>
+   <h6 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">AM NETZ</span></h6>
+   <p>Wenn der Ball über das Netz gespielt wird, muss dieser durch die Antennen fliegen. Der Ball darf das Netz berühren. Die Spieler*innen dürfen das Netz nicht berühren. 
+</p>
+
+
+    <a href="https://www.youtube.com/watch?v=GI4Gh8TpEvU&ab_channel=Sm%27Aesch%F0%9F%92%AB">Hier geht's zu einem Volleyballspiel</a>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Website von Svea Hamblin</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
